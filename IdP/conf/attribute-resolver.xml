@@ -23,6 +23,31 @@
     <!--      Attribute Definitions                 -->
     <!-- ========================================== -->
 
+
+
+
+	<!-- <AttributeDefinition id="Email" xsi:type="Simple" sourceAttributeID="mail">
+		<Dependency ref="myLDAP" />
+		<AttributeEncoder xsi:type="SAML1String" name="urn:mace:dir:attribute-def:mail" encodeType="false" />
+		<AttributeEncoder xsi:type="SAML2String" name="Email" encodeType="false" />
+	</AttributeDefinition>
+	 
+	<AttributeDefinition id="LastName" xsi:type="Simple" sourceAttributeID="sn">
+		<Dependency ref="myLDAP" />
+		<AttributeEncoder xsi:type="SAML1String" name="urn:mace:dir:attribute-def:sn" encodeType="false" />
+		<AttributeEncoder xsi:type="SAML2String" name="LastName" encodeType="false" />
+	</AttributeDefinition>
+	 
+	<AttributeDefinition id="FirstName" xsi:type="Simple" sourceAttributeID="givenName">
+		<Dependency ref="myLDAP" />
+		<AttributeEncoder xsi:type="SAML1String" name="urn:mace:dir:attribute-def:givenName" encodeType="false" />
+		<AttributeEncoder xsi:type="SAML2String" name="FirstName" encodeType="false" />
+	</AttributeDefinition> -->
+
+
+
+
+
     <!--
     The EPPN is the "standard" federated username in higher ed.
     For guidelines on the implementation of this attribute, refer
@@ -83,4 +108,27 @@
         </Attribute>
     </DataConnector>
 
+        <!-- ========================================== -->
+    <!--      Data Connectors                       -->
+    <!-- ========================================== -->
+
+	<DataConnector id="myLDAP" xsi:type="LDAPDirectory"
+        ldapURL="%{idp.attribute.resolver.LDAP.ldapURL}"
+        baseDN="%{idp.attribute.resolver.LDAP.baseDN}"
+        useStartTLS="%{idp.attribute.resolver.LDAP.useStartTLS}" >
+        <FilterTemplate>
+            <![CDATA[
+                %{idp.attribute.resolver.LDAP.searchFilter}
+            ]]>
+        </FilterTemplate>
+    </DataConnector>
+
 </AttributeResolver>
+
+
+                <!-- principal="%{idp.attribute.resolver.LDAP.bindDN}"
+        principalCredential="%{idp.attribute.resolver.LDAP.bindDNCredential}"
+        useStartTLS="%{idp.attribute.resolver.LDAP.useStartTLS}"
+        connectTimeout="%{idp.attribute.resolver.LDAP.connectTimeout}"
+        trustFile="%{idp.attribute.resolver.LDAP.trustCertificates}"
+        responseTimeout="%{idp.attribute.resolver.LDAP.responseTimeout}" -->
