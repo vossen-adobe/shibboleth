@@ -75,4 +75,16 @@
                       indexesRef="shibboleth.CASMetadataIndices" />
     -->
 
+    <MetadataProvider id="SAMLtest"
+        xsi:type="FileBackedHTTPMetadataProvider"
+        backingFile="%{idp.home}/metadata/SAMLtest.xml"
+        metadataURL="https://samltest.id/saml/sp">
+      <!-- You should always check the signature and freshness of remote
+              metadata.  It's commented out until you get the basics working.
+           <MetadataFilter xsi:type="SignatureValidation" 
+                  certificateFile="%{idp.home}/credentials/signet.crt" />
+           <MetadataFilter xsi:type="RequiredValidUntil" maxValidityInterval="P30D"/>
+        -->
+</MetadataProvider>
+
 </MetadataProvider>
