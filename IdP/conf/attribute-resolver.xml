@@ -26,7 +26,7 @@
 
 
 
-	<!-- <AttributeDefinition id="Email" xsi:type="Simple" sourceAttributeID="mail">
+	<AttributeDefinition id="Email" xsi:type="Simple" sourceAttributeID="mail">
 		<Dependency ref="myLDAP" />
 		<AttributeEncoder xsi:type="SAML1String" name="urn:mace:dir:attribute-def:mail" encodeType="false" />
 		<AttributeEncoder xsi:type="SAML2String" name="Email" encodeType="false" />
@@ -42,7 +42,7 @@
 		<Dependency ref="myLDAP" />
 		<AttributeEncoder xsi:type="SAML1String" name="urn:mace:dir:attribute-def:givenName" encodeType="false" />
 		<AttributeEncoder xsi:type="SAML2String" name="FirstName" encodeType="false" />
-	</AttributeDefinition> -->
+	</AttributeDefinition>
 
 
 
@@ -114,8 +114,12 @@
 
 	<DataConnector id="myLDAP" xsi:type="LDAPDirectory"
         ldapURL="%{idp.attribute.resolver.LDAP.ldapURL}"
-        baseDN="%{idp.attribute.resolver.LDAP.baseDN}"
-        useStartTLS="%{idp.attribute.resolver.LDAP.useStartTLS}" >
+        baseDN="%{idp.attribute.resolver.LDAP.baseDN}"        
+        principal="%{idp.attribute.resolver.LDAP.bindDN}"
+        principalCredential="%{idp.attribute.resolver.LDAP.bindDNCredential}"
+        useStartTLS="%{idp.attribute.resolver.LDAP.useStartTLS}"
+        connectTimeout="%{idp.attribute.resolver.LDAP.connectTimeout}"
+        responseTimeout="%{idp.attribute.resolver.LDAP.responseTimeout}">
         <FilterTemplate>
             <![CDATA[
                 %{idp.attribute.resolver.LDAP.searchFilter}
@@ -125,10 +129,3 @@
 
 </AttributeResolver>
 
-
-                <!-- principal="%{idp.attribute.resolver.LDAP.bindDN}"
-        principalCredential="%{idp.attribute.resolver.LDAP.bindDNCredential}"
-        useStartTLS="%{idp.attribute.resolver.LDAP.useStartTLS}"
-        connectTimeout="%{idp.attribute.resolver.LDAP.connectTimeout}"
-        trustFile="%{idp.attribute.resolver.LDAP.trustCertificates}"
-        responseTimeout="%{idp.attribute.resolver.LDAP.responseTimeout}" -->
