@@ -6,7 +6,8 @@
         <md:KeyDescriptor use="signing">
             <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
                 <ds:X509Data>
-                    <ds:X509Certificate>MIIC2TCCAkKgAwIBAgIGAWlePVtjMA0GCSqGSIb3DQEBBQUAMIGvMQswCQYDVQQGEwJVUzETMBEG
+                    <ds:X509Certificate>
+                        MIIC2TCCAkKgAwIBAgIGAWlePVtjMA0GCSqGSIb3DQEBBQUAMIGvMQswCQYDVQQGEwJVUzETMBEG
                         A1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEU
                         MBIGA1UECwwLU1NPUHJvdmlkZXIxMDAuBgNVBAMMJ2FkYmUtMDA1ZDc3MzQ1Yzc4MjE1YjBhNDk0
                         MTFjLTBkYjUtc3RnMTEcMBoGCSqGSIb3DQEJARYNaW5mb0Bva3RhLmNvbTAeFw0xOTAzMDgxNjU2
