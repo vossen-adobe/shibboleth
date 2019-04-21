@@ -14,8 +14,6 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="urn:mace:shibboleth:2.0:afp http://shibboleth.net/schema/idp/shibboleth-afp.xsd">
 
-
-    <!-- Test IDP attribute release. -->
     <AttributeFilterPolicy id="SAMLtest">
         <PolicyRequirementRule xsi:type="Requester" value="https://samltest.id/saml/sp" />
         <AttributeRule attributeID="FirstName" permitAny="true" />
