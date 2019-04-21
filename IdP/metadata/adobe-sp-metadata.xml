@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://www.okta.com/saml2/service-provider/spika7yd8yuBFr7eE0h7"><md:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol"><md:KeyDescriptor use="signing"><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ds:X509Data><ds:X509Certificate>MIIC2TCCAkKgAwIBAgIGAWlePVtjMA0GCSqGSIb3DQEBBQUAMIGvMQswCQYDVQQGEwJVUzETMBEG
+A1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEU
+MBIGA1UECwwLU1NPUHJvdmlkZXIxMDAuBgNVBAMMJ2FkYmUtMDA1ZDc3MzQ1Yzc4MjE1YjBhNDk0
+MTFjLTBkYjUtc3RnMTEcMBoGCSqGSIb3DQEJARYNaW5mb0Bva3RhLmNvbTAeFw0xOTAzMDgxNjU2
+NTNaFw0yOTAzMDgxNjU3NTNaMIGvMQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEW
+MBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEUMBIGA1UECwwLU1NPUHJvdmlk
+ZXIxMDAuBgNVBAMMJ2FkYmUtMDA1ZDc3MzQ1Yzc4MjE1YjBhNDk0MTFjLTBkYjUtc3RnMTEcMBoG
+CSqGSIb3DQEJARYNaW5mb0Bva3RhLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAg6qM
+hyUOEfyfcjgMKeYQDUYApkV2QPAyXnauNOvE5DIC0rQId6wggVynQ+HFakJXFJqYfmke3GYg5oTI
+6tF3o2MZSe93emfc+Zt8Z6fjYrJ9VYE2oEB41QUwwR7m5see6I/w9e39jJNPKl6s52d/kisJokH1
+r5EvPX7iCs7xW7sCAwEAATANBgkqhkiG9w0BAQUFAAOBgQAG7Zr6eaY3U3eUiP6gOf1/DIfSf+Q1
+HbR/ywAZgnstX0xEpyOQI1SXBMQ2JI8fvpgQx8YbtVugfJ1mkGqt9+IGX0BylWIcN8WjpXXGbVy+
+iPslmuh/lWQXIwJW1Kh2z4CDzdPt4qpaS6Sdq/QzDAWvGrKzEwKdvKaNg7wvJNp1mQ==</ds:X509Certificate></ds:X509Data></ds:KeyInfo></md:KeyDescriptor><md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat><md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://adbe-005d77345c78215b0a49411c-0db5-stg1.oktapreview.com/auth/saml20/accauthlinktest" index="0" isDefault="true"/></md:SPSSODescriptor><md:Organization><md:OrganizationName xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:lang="en">adbe-005d77345c78215b0a49411c-0db5-stg1</md:OrganizationName><md:OrganizationDisplayName xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:lang="en">adbe-005d77345c78215b0a49411c-0db5-stg1</md:OrganizationDisplayName><md:OrganizationURL xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:lang="en">https://www.adobe.com</md:OrganizationURL></md:Organization></md:EntityDescriptor>
