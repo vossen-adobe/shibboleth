@@ -29,36 +29,19 @@
     -->
     
     <!-- SAML 2 NameID Generation -->
-    <util:list id="shibboleth.SAML2NameIDGenerators">
-    
-        <ref bean="shibboleth.SAML2TransientGenerator" />
-        
-        <!-- Uncommenting this bean requires configuration in saml-nameid.properties. -->
-        <!--
-        <ref bean="shibboleth.SAML2PersistentGenerator" />
-        -->
+    <util:list id="shibboleth.SAML2NameIDGenerators">    
+        <ref bean="shibboleth.SAML2TransientGenerator" />        
 
-        <!--
         <bean parent="shibboleth.SAML2AttributeSourcedGenerator"
-            p:omitQualifiers="true"
-            p:format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
-            p:attributeSourceIds="#{ {'mail'} }" />
-        -->
+                p:omitQualifiers="true"
+                p:format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
+                p:attributeSourceIds="#{ {'Email'} }" />
                 
     </util:list>
 
     <!-- SAML 1 NameIdentifier Generation -->
     <util:list id="shibboleth.SAML1NameIdentifierGenerators">
-
-        <ref bean="shibboleth.SAML1TransientGenerator" />
-
-        <!--
-        <bean parent="shibboleth.SAML1AttributeSourcedGenerator"
-            p:omitQualifiers="true"
-            p:format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
-            p:attributeSourceIds="#{ {'mail'} }" />
-        -->
-                
+        <ref bean="shibboleth.SAML1TransientGenerator" />                
     </util:list>
     
 </beans>

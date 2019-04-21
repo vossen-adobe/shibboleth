@@ -40,8 +40,18 @@
         <Dependency ref="myLDAP" />
         <AttributeEncoder xsi:type="SAML1String" name="urn:mace:dir:attribute-def:givenName" encodeType="false" />
         <AttributeEncoder xsi:type="SAML2String" nameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified" name="FirstName" encodeType="false" />
+    </AttributeDefinition>	
+
+    <AttributeDefinition id="ObfuscatedEmail" xsi:type="Template">
+        <InputDataConnector ref="myLDAP" attributeNames="employeeID" />
+        <AttributeEncoder xsi:type="SAML1String" name="urn:mace:dir:attribute-def:mail" encodeType="false" />
+        <AttributeEncoder xsi:type="SAML2String" name="Obfuscated" encodeType="false" />
+        <Template>
+          <![CDATA[
+               ${employeeID}@seaofcarag.com
+          ]]>
+        </Template>
     </AttributeDefinition>
-	
 
     <!-- ========================================== -->
     <!--      Data Connectors                       -->
