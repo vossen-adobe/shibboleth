@@ -74,11 +74,14 @@
     <!-- Process log. -->
     <appender name="IDP_PROCESS" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <File>${idp.logfiles}/idp-process.log</File>
-        
+
+       
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>${idp.logfiles}/idp-process-%d{yyyy-MM-dd}.log.gz</fileNamePattern>
             <maxHistory>${idp.loghistory}</maxHistory>
         </rollingPolicy>
+
+         <!-- <append>false</append> -->
 
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <charset>UTF-8</charset>
