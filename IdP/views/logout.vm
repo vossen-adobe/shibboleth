@@ -28,6 +28,7 @@
         #end
         <title>#springMessageText("idp.title", "Web Login Service")</title>
         <link rel="stylesheet" type="text/css" href="$request.getContextPath()/css/main.css">
+        <link rel='shortcut icon' type='image/x-icon' href='$request.getContextPath()/favicon.ico' />
     </head>
 
     <body>
