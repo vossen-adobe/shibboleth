@@ -74,10 +74,10 @@
         </div>
     </div>
 
-    <footer>
-        <div class="container container-footer">
-        </div>
-    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="$request.getContextPath()/js/theme.js"></script>
+
+
 </div>
 
 </body>

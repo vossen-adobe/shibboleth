@@ -1,11 +1,17 @@
 
 body {
 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
     font-family:Verdana, Geneva, sans-serif;
     font-size: 14px;
     line-height: 1.5;
     color: #eaeaea;
-    background-image: URL('../images/shib_wp.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-image: URL('/idp/images/background/sea-monster-wallpapers-28186-7411191.jpg'); */
 }
 
 footer {
@@ -17,6 +23,10 @@ header, .content{
     margin-right:auto;
     text-align:center;
     width:500px;
+}
+
+html {
+    height: 100%;
 }
 
 header h3 {
