@@ -12,22 +12,26 @@
        default-init-method="initialize"
        default-destroy-method="destroy">
 
-    <!-- ========================= SAML NameID Generation ========================= -->
-    
-    <!-- SAML 2 NameID Generation -->
-    <util:list id="shibboleth.SAML2NameIDGenerators">    
-        <ref bean="shibboleth.SAML2TransientGenerator" />        
 
-        <bean parent="shibboleth.SAML2AttributeSourcedGenerator"
-                p:omitQualifiers="true"
-                p:format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
-                p:attributeSourceIds="#{ {'Username'} }" />
-                
-    </util:list>
+    <!-- Apply any regular expression replacement pairs to address before validation. -->
+    <util:list id="shibboleth.authn.IPAddress.Transforms" />
 
-    <!-- SAML 1 NameIdentifier Generation -->
-    <util:list id="shibboleth.SAML1NameIdentifierGenerators">
-        <ref bean="shibboleth.SAML1TransientGenerator" />                
-    </util:list>
-    
+    <!--
+    Configure the address range(s) and principal name(s) for IP-based login here.
+    The ranges provided MUST be CIDR network expressions. To specify a single address,
+    add "/32" or "/128" for IPv4 or IPv6 respectively.
+    -->
+
+
+    <util:map id="shibboleth.authn.IPAddress.Mappings">
+        <!--
+        <entry key="jdoe">
+            <list>
+                <value>127.0.0.1/32</value>
+                <value>::1/128</value>
+            </list>
+        </entry>
+        -->
+    </util:map>
+
 </beans>

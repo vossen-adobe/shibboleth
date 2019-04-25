@@ -19,15 +19,15 @@
         <AttributeRule attributeID="FirstName" permitAny="true" />
         <AttributeRule attributeID="LastName" permitAny="true" />
         <AttributeRule attributeID="Email" permitAny="true" />
-        <AttributeRule attributeID="Username" permitAny="true" />
+        <AttributeRule attributeID="ObfuscatedEmail" permitAny="true" />
     </AttributeFilterPolicy>    
 
     <AttributeFilterPolicy id="AdobeFilter">
         <PolicyRequirementRule xsi:type="Requester" value="https://www.okta.com/saml2/service-provider/spika7yd8yuBFr7eE0h7" />
         <AttributeRule attributeID="FirstName" permitAny="true" />
         <AttributeRule attributeID="LastName" permitAny="true" />
-        <AttributeRule attributeID="Email" permitAny="true" />        
-        <AttributeRule attributeID="Username" permitAny="true" />
+        <AttributeRule attributeID="Email" permitAny="true" />
+        <AttributeRule attributeID="ObfuscatedEmail" permitAny="true" />
     </AttributeFilterPolicy>    
 
 </AttributeFilterPolicyGroup>

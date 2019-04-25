@@ -12,22 +12,16 @@
        default-init-method="initialize"
        default-destroy-method="destroy">
 
-    <!-- ========================= SAML NameID Generation ========================= -->
-    
-    <!-- SAML 2 NameID Generation -->
-    <util:list id="shibboleth.SAML2NameIDGenerators">    
-        <ref bean="shibboleth.SAML2TransientGenerator" />        
+    <!-- Simple transforms to apply to username after authentication. -->
+    <util:constant id="shibboleth.c14n.simple.Lowercase" static-field="java.lang.Boolean.FALSE"/>
+    <util:constant id="shibboleth.c14n.simple.Uppercase" static-field="java.lang.Boolean.FALSE"/>
+    <util:constant id="shibboleth.c14n.simple.Trim" static-field="java.lang.Boolean.TRUE"/>
 
-        <bean parent="shibboleth.SAML2AttributeSourcedGenerator"
-                p:omitQualifiers="true"
-                p:format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
-                p:attributeSourceIds="#{ {'Username'} }" />
-                
+    <!-- Apply any regular expression replacement pairs after authentication. -->
+    <util:list id="shibboleth.c14n.simple.Transforms">
+        <!--
+        <bean parent="shibboleth.Pair" p:first="^(.+)@example\.edu$" p:second="$1" />
+        -->
     </util:list>
-
-    <!-- SAML 1 NameIdentifier Generation -->
-    <util:list id="shibboleth.SAML1NameIdentifierGenerators">
-        <ref bean="shibboleth.SAML1TransientGenerator" />                
-    </util:list>
-    
+        
 </beans>

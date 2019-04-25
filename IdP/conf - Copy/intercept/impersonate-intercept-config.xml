@@ -12,22 +12,14 @@
        default-init-method="initialize"
        default-destroy-method="destroy">
 
-    <!-- ========================= SAML NameID Generation ========================= -->
-    
-    <!-- SAML 2 NameID Generation -->
-    <util:list id="shibboleth.SAML2NameIDGenerators">    
-        <ref bean="shibboleth.SAML2TransientGenerator" />        
+    <!--
+    Names of access control policies defined in access-control.xml to control impersonation.
+    The general policy runs first and determines whether to offer the impersonation option.
+    The specific policy runs second and determines whether to allow the requested impersonation.
+    -->
 
-        <bean parent="shibboleth.SAML2AttributeSourcedGenerator"
-                p:omitQualifiers="true"
-                p:format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
-                p:attributeSourceIds="#{ {'Username'} }" />
-                
-    </util:list>
+    <bean id="shibboleth.impersonate.GeneralPolicy" class="java.lang.String" c:_0="GeneralImpersonationPolicy" />
 
-    <!-- SAML 1 NameIdentifier Generation -->
-    <util:list id="shibboleth.SAML1NameIdentifierGenerators">
-        <ref bean="shibboleth.SAML1TransientGenerator" />                
-    </util:list>
+    <bean id="shibboleth.impersonate.SpecificPolicy" class="java.lang.String" c:_0="SpecificImpersonationPolicy" />
     
 </beans>
