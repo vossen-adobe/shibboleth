@@ -1,0 +1,144 @@
+<saml2p:Response xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol"
+                 Destination="https://adbe-005d77345c78215b0a49411c-0db5-stg1.oktapreview.com/auth/saml20/accauthlinktest"
+                 ID="_a9a6e855ac587c22fe9847ca0ed44b59"
+                 InResponseTo="id41219363688152351331495506"
+                 IssueInstant="2019-04-25T16:01:05.446Z"
+                 Version="2.0"
+                 >
+    <saml2:Issuer xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">https://caragianbadlands.com/idp/shibboleth</saml2:Issuer>
+    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:SignedInfo>
+            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+            <ds:Reference URI="#_a9a6e855ac587c22fe9847ca0ed44b59">
+                <ds:Transforms>
+                    <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+                    <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+                <ds:DigestValue>yyrSUwX7TKDKLP1effP36eTelwoZLj2yXzl+eyt8iR0=</ds:DigestValue>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>ZiNYvYtkGhXvi+E8jnuN9lH9ROTile03ivqSFmqMxQ6T/l+qEyizJ2BZV3RJd5LPncYPJs+zdAedOVLAKZrUDrGAsB9tKEAA8garcQ1OgTw+gKfUSaJLL7AUh52VnolwY3X7/ng5zbA5ImCReKX2JZQ96Pt7FXKjPcGD1WQ8wpvJ7f7+NW9xev8mMvsrDwEV5/gMqFVxEyRw5KRwyM41s0Jdu+z80bjiN5Vb1ldSlT2NAft2C8CZagvL4fOtIvH0onWAAygQB0YzYOsCM8V/lM7ASr39T2NS/NMvYiRiiE0dOJKb1Ljoz/N15PSnr1lA2C4VASYwraKmwP5NS7mnzntiEEd9PP80CtTWrQ10GQ+TENb1l5+BMlVcwRF6RtNkarLuFl4eGZBzB5VqENCMw4SSAj+BGJr+Tx1gd6lkfXtYodMyTYACcKst5i0xhSRoFDXUilfHCwS5HoWktR9Nh2ne8ryD9lZfSOit3hrs5QGyImA5tTlDLJTr5AQ0E1o5</ds:SignatureValue>
+        <ds:KeyInfo>
+            <ds:X509Data>
+                <ds:X509Certificate>MIIEPDCCAqSgAwIBAgIUdsHw0rYkPs98sjNSFCKe+NVQalswDQYJKoZIhvcNAQELBQAwIzEhMB8G
+A1UEAwwYaWRwLmNhcmFnaWFuYmFkbGFuZHMuY29tMB4XDTE5MDQxOTAyNTAxN1oXDTM5MDQxOTAy
+NTAxN1owIzEhMB8GA1UEAwwYaWRwLmNhcmFnaWFuYmFkbGFuZHMuY29tMIIBojANBgkqhkiG9w0B
+AQEFAAOCAY8AMIIBigKCAYEAunLlFkkdTrwOxm4DG/xzQStEOyY7y5f+PlPEZKVeAnQhclEWJcb4
+BN1wOCbfmEmfRIZUUFtgtB3VVt44GMpOi6IKKUADeVqgA3UlifzjxECbGwMFBeJ0yFTORqaQoCXe
+MpvwiwLwUQCi3hndOeLIU2p6cvRV4Nbh9Ug/idLuKkzco408IWhoZ8CLEwl8PgO/tZq6bLHqRo7J
+4t9ubaklQwjbZZMykG+dKrvfP58ONMjzFrAqT+6K6xkzKsWLSMM0eQIyfb9QGbnf3sIbqIrZX0pe
+/Z+y5pMMRi+Izzyda9FFp+B9xZZOfaPFICgU35BGhInr5ru48UPf5PblHEEdbbpgVRkMI1EN2Q9c
+HMCi0J1urvJCyZpcTM2FPZHkEGamly7qJbf3mCRzH1lsNxSqxsuwLFzvqTE0GQ7+QRthj0oimoJJ
+iazTPloGR1+64kgXJR3KZsLun2iK6D9B8X4NstcHna4c+T0FpsODc10rdPO1SydelVBW5wnMoMHo
+C+nDAgMBAAGjaDBmMB0GA1UdDgQWBBQr9N26E+bsJzAjK2EPBpBmS2R0EDBFBgNVHREEPjA8ghhp
+ZHAuY2FyYWdpYW5iYWRsYW5kcy5jb22GIGh0dHBzOi8vY2FyYWdpYW5iYWRsYW5kcy5jb20vaWRw
+MA0GCSqGSIb3DQEBCwUAA4IBgQBxaNW8run4mMQO4DITnDbAahgv96K2TrLAiiGlAQBP0Ph0zLWA
+EiKxiOsahnpK8f4N80fe9/hyHYJm4UJlPwS5vpYwLm+7c5HpBiZsXgTH+zqWE5oM0L4+U+jYtr6j
+tNHFArKyHQ8Dnn34l/8RqQhC0w8zIj1px8W8Eq9rKLKpQ3dP6DXiObK4adyj+k53jUoQrRaHJ4Co
+w2Q3Dl4lgUvlKVzd/TJ7QS6GKniQh2Lt2FAmLLgCaNWG29y7WMtJq5yNRZm+p0ceRDPdtd5u65xs
+0X/bcZdXpfdqBPx8Jbx9dkVFT/YNJ2R6K/a5JsCqcBUzwF1MRkTPGsApX1f4yuGimmbMu4uqN8Uv
+IuhsYbaBwM0o1T3EhQeRkOtIoW46ng9hSh2llQIZKkEfGYHAB14t8udPdA33o03NGo3my4E8u8KG
+LcgcBXMP4AZx7oKL7DCGJVcBhokvTCWvO1ElyaCMFLIV/bCBPh27OJKRSwHJYunXZKlRBq+pPdqv
+jz9aXt0=</ds:X509Certificate>
+            </ds:X509Data>
+        </ds:KeyInfo>
+    </ds:Signature>
+    <saml2p:Status>
+        <saml2p:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success" />
+    </saml2p:Status>
+    <saml2:Assertion xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                     ID="_e87d50a0665161b989fc11d2e059a0b0"
+                     IssueInstant="2019-04-25T16:01:05.446Z"
+                     Version="2.0"
+                     >
+        <saml2:Issuer>https://caragianbadlands.com/idp/shibboleth</saml2:Issuer>
+        <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+            <ds:SignedInfo>
+                <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+                <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+                <ds:Reference URI="#_e87d50a0665161b989fc11d2e059a0b0">
+                    <ds:Transforms>
+                        <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+                        <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+                    </ds:Transforms>
+                    <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+                    <ds:DigestValue>f+xh3MEjhTpVUSe1JNpn3uuZ0eF31z6OQNAsQgjdTys=</ds:DigestValue>
+                </ds:Reference>
+            </ds:SignedInfo>
+            <ds:SignatureValue>NAotiEfuNRet48L/6p6s9RXd3mPOYRYxUqb+EzTE2LGNkwYxQLrrc70dwQ1t/hHQ4ZpVEePEm5m8SbRpGOOmZUq1BxQx6S2/+7BJdOfcC+LXbxefkHs3LHe0CdQ/Ia+aP5z2ojy7vEcjBXg6wMSfM4i+t6WrozkPGzvYNqRlo3NZjW5kAzfda8ewaTKyVbCYBD658lBxR9iKK0U1TWd9WTW1jp15dS1cCC0ZLzpZN+/CB+D+JiUpR5IXr/FZJQ6I7qfsP+gmojhNgpVc2m1vq9UzeEr6WCfVt1Zrtd0Zh5gV56D5eQUYUcVrKw1/W1H84Z4G3ldZsRDzLtg+PqJ3DYXtXACu7+SlfCLL/8/1oIXeSY6fI8nu64oIR4mnJ4+Rw49WdJr7cxuC6AmuNkrwdlic4qzmfpAhLZwxTuwv+UXXqmCgkQn9dbcUT+Mq2K+fEWD2v1iRaqyj8OP6H1ciKzMrKLpOmCz4KOajJzxzvv15z7R+W+AfbnevDWS0hteV</ds:SignatureValue>
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>MIIEPDCCAqSgAwIBAgIUdsHw0rYkPs98sjNSFCKe+NVQalswDQYJKoZIhvcNAQELBQAwIzEhMB8G
+A1UEAwwYaWRwLmNhcmFnaWFuYmFkbGFuZHMuY29tMB4XDTE5MDQxOTAyNTAxN1oXDTM5MDQxOTAy
+NTAxN1owIzEhMB8GA1UEAwwYaWRwLmNhcmFnaWFuYmFkbGFuZHMuY29tMIIBojANBgkqhkiG9w0B
+AQEFAAOCAY8AMIIBigKCAYEAunLlFkkdTrwOxm4DG/xzQStEOyY7y5f+PlPEZKVeAnQhclEWJcb4
+BN1wOCbfmEmfRIZUUFtgtB3VVt44GMpOi6IKKUADeVqgA3UlifzjxECbGwMFBeJ0yFTORqaQoCXe
+MpvwiwLwUQCi3hndOeLIU2p6cvRV4Nbh9Ug/idLuKkzco408IWhoZ8CLEwl8PgO/tZq6bLHqRo7J
+4t9ubaklQwjbZZMykG+dKrvfP58ONMjzFrAqT+6K6xkzKsWLSMM0eQIyfb9QGbnf3sIbqIrZX0pe
+/Z+y5pMMRi+Izzyda9FFp+B9xZZOfaPFICgU35BGhInr5ru48UPf5PblHEEdbbpgVRkMI1EN2Q9c
+HMCi0J1urvJCyZpcTM2FPZHkEGamly7qJbf3mCRzH1lsNxSqxsuwLFzvqTE0GQ7+QRthj0oimoJJ
+iazTPloGR1+64kgXJR3KZsLun2iK6D9B8X4NstcHna4c+T0FpsODc10rdPO1SydelVBW5wnMoMHo
+C+nDAgMBAAGjaDBmMB0GA1UdDgQWBBQr9N26E+bsJzAjK2EPBpBmS2R0EDBFBgNVHREEPjA8ghhp
+ZHAuY2FyYWdpYW5iYWRsYW5kcy5jb22GIGh0dHBzOi8vY2FyYWdpYW5iYWRsYW5kcy5jb20vaWRw
+MA0GCSqGSIb3DQEBCwUAA4IBgQBxaNW8run4mMQO4DITnDbAahgv96K2TrLAiiGlAQBP0Ph0zLWA
+EiKxiOsahnpK8f4N80fe9/hyHYJm4UJlPwS5vpYwLm+7c5HpBiZsXgTH+zqWE5oM0L4+U+jYtr6j
+tNHFArKyHQ8Dnn34l/8RqQhC0w8zIj1px8W8Eq9rKLKpQ3dP6DXiObK4adyj+k53jUoQrRaHJ4Co
+w2Q3Dl4lgUvlKVzd/TJ7QS6GKniQh2Lt2FAmLLgCaNWG29y7WMtJq5yNRZm+p0ceRDPdtd5u65xs
+0X/bcZdXpfdqBPx8Jbx9dkVFT/YNJ2R6K/a5JsCqcBUzwF1MRkTPGsApX1f4yuGimmbMu4uqN8Uv
+IuhsYbaBwM0o1T3EhQeRkOtIoW46ng9hSh2llQIZKkEfGYHAB14t8udPdA33o03NGo3my4E8u8KG
+LcgcBXMP4AZx7oKL7DCGJVcBhokvTCWvO1ElyaCMFLIV/bCBPh27OJKRSwHJYunXZKlRBq+pPdqv
+jz9aXt0=</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </ds:Signature>
+        <saml2:Subject>
+            <saml2:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress">hkim</saml2:NameID>
+            <saml2:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+                <saml2:SubjectConfirmationData Address="192.168.50.187"
+                                               InResponseTo="id41219363688152351331495506"
+                                               NotOnOrAfter="2019-04-25T16:06:05.493Z"
+                                               Recipient="https://adbe-005d77345c78215b0a49411c-0db5-stg1.oktapreview.com/auth/saml20/accauthlinktest"
+                                               />
+            </saml2:SubjectConfirmation>
+        </saml2:Subject>
+        <saml2:Conditions NotBefore="2019-04-25T16:01:05.446Z"
+                          NotOnOrAfter="2019-04-25T16:06:05.446Z"
+                          >
+            <saml2:AudienceRestriction>
+                <saml2:Audience>https://www.okta.com/saml2/service-provider/spika7yd8yuBFr7eE0h7</saml2:Audience>
+            </saml2:AudienceRestriction>
+        </saml2:Conditions>
+        <saml2:AuthnStatement AuthnInstant="2019-04-25T16:01:05.368Z"
+                              SessionIndex="_34ff370553684a864874b2338e92a992"
+                              >
+            <saml2:SubjectLocality Address="192.168.50.187" />
+            <saml2:AuthnContext>
+                <saml2:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport</saml2:AuthnContextClassRef>
+            </saml2:AuthnContext>
+        </saml2:AuthnStatement>
+        <saml2:AttributeStatement>
+            <saml2:Attribute Name="Email"
+                             NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified"
+                             >
+                <saml2:AttributeValue>hkim@caragianbadlands.com</saml2:AttributeValue>
+            </saml2:Attribute>
+            <saml2:Attribute Name="Username"
+                             NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified"
+                             >
+                <saml2:AttributeValue>hkim</saml2:AttributeValue>
+            </saml2:Attribute>
+            <saml2:Attribute Name="FirstName"
+                             NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified"
+                             >
+                <saml2:AttributeValue>Harry</saml2:AttributeValue>
+            </saml2:Attribute>
+            <saml2:Attribute Name="LastName"
+                             NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified"
+                             >
+                <saml2:AttributeValue>Kim</saml2:AttributeValue>
+            </saml2:Attribute>
+        </saml2:AttributeStatement>
+    </saml2:Assertion>
+</saml2p:Response>
