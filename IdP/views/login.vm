@@ -34,15 +34,23 @@
     <title>Shibboleth Battle</title>
 	<link rel='shortcut icon' type='image/x-icon' href='$request.getContextPath()/favicon.ico' />
     <link rel="stylesheet" type="text/css" href="$request.getContextPath()/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="$request.getContextPath()/js/theme.js"></script>
+    
 </head>
 <body>
 <div class="wrapper">
     <div class="container">
+
+        <div id="logo">Caragian Badlands</div>
+
         <div class="content">
 
-            <img class="main-img" src="$request.getContextPath()/images/shib_trans.png" />
+            ## <img class="main-img" src="$request.getContextPath()/images/shib_trans.png" />
 
-            <div class="message-box">A wild Shibboleth appears!<br>
+            
+
+            <div id="chanty" class="message-box">A wild Shibboleth appears!<br>
                 Enter your credentials to pass...</div>
 
                 #parse("login-error.vm")
@@ -74,8 +82,7 @@
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="$request.getContextPath()/js/theme.js"></script>
+
 
 
 </div>

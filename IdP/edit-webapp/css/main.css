@@ -4,14 +4,13 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    
+    min-width:700px;    
     font-family:Verdana, Geneva, sans-serif;
     font-size: 14px;
     line-height: 1.5;
     color: #eaeaea;
     background-size: cover;
     background-attachment: fixed;
-    /* background-image: URL('/idp/images/background/sea-monster-wallpapers-28186-7411191.jpg'); */
 }
 
 footer {
@@ -24,6 +23,31 @@ header, .content{
     text-align:center;
     width:500px;
 }
+
+#logo {
+    content:url('/idp/images/badlands.png');
+    width:700px;
+    margin-bottom: 100px;
+    -webkit-filter: drop-shadow(0px 0px 18px black);
+    filter:drop-shadow(0px 0px 18px black);
+    display:inline-block;
+
+ }
+
+.container {
+     text-align: center;
+ }
+
+.content {
+    text-align: center;
+    width: 400px;
+    border: 2px solid black;
+    padding:25px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
 
 html {
     height: 100%;
@@ -52,16 +76,19 @@ a:visited {
 }
 
 .message-box{
-    color:white;
+    color:#6dcc6b;
     font-weight:bold;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
+    text-align:left;
+    width:90%;
+    margin-left: 5%;
 }
 
 form {
     margin-left:-10px;
     text-align:left;
     display:inline-block;
-    width: 270px;
+    width: 90%;
     padding-bottom: 0px;
 }
 form label { /* labels are hidden */
@@ -115,7 +142,7 @@ input[type="text"]:focus {
 .form-button:hover {
     background: #be0000;
     border:none;
-    box-shadow: 0px 0px 10px red;
+    box-shadow: 0px 0px 1px red;
 }
 
 .form-button:active{
