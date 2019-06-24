@@ -11,6 +11,7 @@ body {
     color: #eaeaea;
     background-size: cover;
     background-attachment: fixed;
+    background-color: black;
 }
 
 footer {
@@ -40,7 +41,7 @@ header, .content{
 
 .content {
     text-align: center;
-    width: 400px;
+    width: 500px;
     border: 3px solid #969696;
     padding:25px;
     border-radius: 15px;

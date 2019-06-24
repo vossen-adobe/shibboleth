@@ -4,7 +4,7 @@ setBackground()
 
 
 jQuery(function () {
-    $("#chanty").html(getRandomChanty())
+    $("#chanty").html("\"" + getRandomChanty() + "\"")
 });
 
 function  setBackground(){

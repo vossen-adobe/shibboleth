@@ -20,8 +20,7 @@
 ## custom - arbitrary object injected by deployer
 ##
 #set ($rpContext = $profileRequestContext.getSubcontext('net.shibboleth.idp.profile.context.RelyingPartyContext'))
-#set ($username = $authenticationContext.getSubcontext('net.shibboleth.idp.authn.context.UsernamePasswordContext',
-true).getUsername())
+#set ($username = $authenticationContext.getSubcontext('net.shibboleth.idp.authn.context.UsernamePasswordContext', true).getUsername())
 #set ($passwordEnabled = false)
 #if (!$passwordPrincipals or $passwordPrincipals.isEmpty() or $authenticationContext.isAcceptable($passwordPrincipals))
 #set ($passwordEnabled = true)
@@ -29,60 +28,55 @@ true).getUsername())
 ##
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Badlands</title>
-    <link rel='shortcut icon' type='image/x-icon' href='$request.getContextPath()/favicon.ico' />
-    <link rel="stylesheet" type="text/css" href="$request.getContextPath()/css/main.css">
+	<link rel='shortcut icon' type='image/x-icon' href='$request.getContextPath()/favicon.ico' />
+    <link rel="stylesheet" type="text/css" href="$request.getContextPath()/css/main.css">    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="$request.getContextPath()/js/theme.js"></script>
 </head>
-
 <body>
-    <div class="wrapper">
-        <div class="container">
+<div class="wrapper">
+    <div class="container">
+    
 
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div id="logo">Caragian Badlands</div>
-                </div>
-            </div>
+        <div id="logo">Caragian Badlands</div>
 
-            <div class="content">
+        <div class="content">            
 
-                <div id="chanty" class="message-box">&nbsp</div>
+            <div id="chanty" class="message-box">A wild Shibboleth appears!<br>
+                Enter your credentials to pass...</div>
 
                 #parse("login-error.vm")
 
                 <form action="$flowExecutionUrl" method="post">
 
                     #if ($passwordEnabled)
-                    <div class="form-element-wrapper">
-                        <label for="username">#springMessageText("idp.login.username", "Username")</label>
-                        <input class="form-element form-field" id="username" name="j_username" type="text"
-                            value="#if($username)$encoder.encodeForHTML($username)#end">
-                    </div>
+                        <div class="form-element-wrapper">
+                            <label for="username">#springMessageText("idp.login.username", "Username")</label>
+                            <input class="form-element form-field" id="username" name="j_username" type="text"
+                                   value="#if($username)$encoder.encodeForHTML($username)#end">
+                        </div>
 
-                    <div class="form-element-wrapper">
-                        <label for="password">#springMessageText("idp.login.password", "Password")</label>
-                        <input class="form-element form-field" id="password" name="j_password" type="password" value="">
-                    </div>
+                        <div class="form-element-wrapper">
+                            <label for="password">#springMessageText("idp.login.password", "Password")</label>
+                            <input class="form-element form-field" id="password" name="j_password" type="password" value="">
+                        </div>
 
-                    <div class="form-element-wrapper">
-                        <button class="form-element form-button" type="submit" name="_eventId_proceed"
-                            onClick="this.childNodes[0].nodeValue='#springMessageText("
-                            idp.login.pleasewait", "Logging in, please wait..."
-                            )'">#springMessageText("idp.login.login", "Login")</button>
-                    </div>
+                        <div class="form-element-wrapper">
+                            <button class="form-element form-button" type="submit" name="_eventId_proceed"
+                                    onClick="this.childNodes[0].nodeValue='#springMessageText("idp.login.pleasewait", "Logging in, please wait...")'"
+                            >#springMessageText("idp.login.login", "Login")</button>
+                        </div>
                     #end
                 </form>
 
-            </div>
         </div>
-
     </div>
+
+</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
         integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
@@ -92,5 +86,4 @@ true).getUsername())
         crossorigin="anonymous"></script>
 
 </body>
-
 </html>
