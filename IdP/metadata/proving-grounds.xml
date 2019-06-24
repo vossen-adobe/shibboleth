@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://www.okta.com/saml2/service-provider/spils9736keVmSkYx0h7"><md:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol"><md:KeyDescriptor use="signing"><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ds:X509Data><ds:X509Certificate>MIIC2TCCAkKgAwIBAgIGAWuH01tNMA0GCSqGSIb3DQEBBQUAMIGvMQswCQYDVQQGEwJVUzETMBEG
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://www.okta.com/saml2/service-provider/spils9736keVmSkYx0h7">
+   <md:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:KeyDescriptor use="signing">
+         <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+            <ds:X509Data>
+               <ds:X509Certificate>MIIC2TCCAkKgAwIBAgIGAWuH01tNMA0GCSqGSIb3DQEBBQUAMIGvMQswCQYDVQQGEwJVUzETMBEG
 A1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEU
 MBIGA1UECwwLU1NPUHJvdmlkZXIxMDAuBgNVBAMMJ2FkYmUtZmI2ODU3ZTM1ZDEwNTY1NDBhNDk0
 MTA3LThkMzktc3RnMTEcMBoGCSqGSIb3DQEJARYNaW5mb0Bva3RhLmNvbTAeFw0xOTA2MjQwNDUw
@@ -10,4 +16,16 @@ pJ/kxvWDV7EQKav1T2Dd/m+f6ZO3MrjIRU4+enlUt63gODCjTY70jtfjDAa56ZhXRkzWvFqPGMb7
 D7mF6139ZcQvBHcbO4No+iNoEayPTdX8nhBiu9FxVRAhQPqMs+gvJ5hxs2ZUNUAhGbo6fwLZkWj6
 QM5NVtO06lTcswsCAwEAATANBgkqhkiG9w0BAQUFAAOBgQA/LQmtj3qXP7AAHQCxHLnbv2nDdg7F
 DRQe9ZImU2zNS+zvqrq/Vbw+HsUC5QrHOO8V1EUlHjxcRjW9NDi1Llb9UGKjdBYwpvGddkOoqyKT
-1kLTxv5Qo+9MQU2v2TiEmvKqe5RhmzGARTB6ImcNM3ZFM++SKZ0Gj3vq8+k3FhfdRA==</ds:X509Certificate></ds:X509Data></ds:KeyInfo></md:KeyDescriptor><md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat><md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat><md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://adbe-fb6857e35d1056540a494107-8d39-stg1.oktapreview.com/auth/saml20/accauthlinktest" index="0" isDefault="true"/></md:SPSSODescriptor><md:Organization><md:OrganizationName xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:lang="en">adbe-fb6857e35d1056540a494107-8d39-stg1</md:OrganizationName><md:OrganizationDisplayName xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:lang="en">adbe-fb6857e35d1056540a494107-8d39-stg1</md:OrganizationDisplayName><md:OrganizationURL xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:lang="en">https://www.adobe.com</md:OrganizationURL></md:Organization></md:EntityDescriptor>
+1kLTxv5Qo+9MQU2v2TiEmvKqe5RhmzGARTB6ImcNM3ZFM++SKZ0Gj3vq8+k3FhfdRA==</ds:X509Certificate>
+            </ds:X509Data>
+         </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://adbe-fb6857e35d1056540a494107-8d39-stg1.oktapreview.com/auth/saml20/accauthlinktest" index="0" isDefault="true" />
+   </md:SPSSODescriptor>
+   <md:Organization>
+      <md:OrganizationName xml:lang="en">adbe-fb6857e35d1056540a494107-8d39-stg1</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">adbe-fb6857e35d1056540a494107-8d39-stg1</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">https://www.adobe.com</md:OrganizationURL>
+   </md:Organization>
+</md:EntityDescriptor>

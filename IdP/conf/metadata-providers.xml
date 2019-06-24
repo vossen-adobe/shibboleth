@@ -24,6 +24,10 @@
     <!--  NOTE.  This file SHOULD NOT contain the metadata for this IdP.                            -->
     <!-- ========================================================================================== -->
 
+    <MetadataProvider id="ProvingGrounds"  
+        xsi:type="FilesystemMetadataProvider" 
+        metadataFile="%{idp.home}/metadata/proving-grounds.xml"/>
+
     <MetadataProvider id="AdobeMetadata"  
         xsi:type="FilesystemMetadataProvider" 
         metadataFile="%{idp.home}/metadata/adobe-sp-metadata.xml"/>

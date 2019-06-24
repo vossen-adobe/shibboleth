@@ -21,7 +21,7 @@
         <bean parent="shibboleth.SAML2AttributeSourcedGenerator"
                 p:omitQualifiers="true"
                 p:format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
-                p:attributeSourceIds="#{ {'Username'} }" />
+                p:attributeSourceIds="#{ {'Email'} }" />
                 
     </util:list>
 

@@ -56,7 +56,7 @@
         for SAML 2 SSO without encryption. This is a common "vendor" scenario.
         -->
         
-        <bean parent="RelyingPartyByName" c:relyingPartyIds="#{{'https://samltest.id/saml/sp', 'https://www.okta.com/saml2/service-provider/spika7yd8yuBFr7eE0h7'}}">
+        <bean parent="RelyingPartyByName" c:relyingPartyIds="#{{'https://samltest.id/saml/sp', 'https://www.okta.com/saml2/service-provider/spika7yd8yuBFr7eE0h7', 'https://www.okta.com/saml2/service-provider/spils9736keVmSkYx0h7'}}">
             <property name="profileConfigurations">
                 <list>
                     <bean parent="SAML2.SSO" p:nameIDFormatPrecedence="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress" p:encryptAssertions="false"/>
