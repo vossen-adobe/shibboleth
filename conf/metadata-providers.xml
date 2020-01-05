@@ -40,51 +40,6 @@
             xsi:type="FileBackedHTTPMetadataProvider"
             backingFile="%{idp.home}/metadata/SAMLtest.xml"
             metadataURL="https://samltest.id/saml/sp">
-        <!-- You should always check the signature and freshness of remote
-                metadata.  It's commented out until you get the basics working.
-            <MetadataFilter xsi:type="SignatureValidation" 
-                    certificateFile="%{idp.home}/credentials/signet.crt" />
-            <MetadataFilter xsi:type="RequiredValidUntil" maxValidityInterval="P30D"/>
-            -->
     </MetadataProvider>
-
-    <!--
-    <MetadataProvider id="HTTPMetadata"
-                      xsi:type="FileBackedHTTPMetadataProvider"
-                      backingFile="%{idp.home}/metadata/localCopyFromXYZHTTP.xml"
-                      metadataURL="http://WHATEVER"> 
-        
-        <MetadataFilter xsi:type="SignatureValidation" certificateFile="%{idp.home}/credentials/metaroot.pem" />
-        <MetadataFilter xsi:type="RequiredValidUntil" maxValidityInterval="P30D"/>
-        <MetadataFilter xsi:type="EntityRoleWhiteList">
-            <RetainedRole>md:SPSSODescriptor</RetainedRole>
-        </MetadataFilter>
-    </MetadataProvider>
-    -->   
-
-    <!--
-    Example file metadata provider.  Use this if you want to load metadata
-    from a local file.  You might use this if you have some local SPs
-    which are not "federated" but you wish to offer a service to.
-    
-    If you do not provide a SignatureValidation filter, then you have the
-    responsibility to ensure that the contents on disk are trustworthy.
-    -->
-    
-    <!--
-    <MetadataProvider id="LocalMetadata"  xsi:type="FilesystemMetadataProvider" metadataFile="PATH_TO_YOUR_METADATA"/>
-    -->
-
-
-    <!--
-    Example CAS metadata source.
-    -->
-
-    <!--
-    <MetadataProvider id="CasMetadata"
-                      xsi:type="FilesystemMetadataProvider"
-                      metadataFile="PATH_TO_YOUR_METADATA"
-                      indexesRef="shibboleth.CASMetadataIndices" />
-    -->
 
 </MetadataProvider>
